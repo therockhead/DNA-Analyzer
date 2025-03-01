@@ -407,7 +407,12 @@ public class Home extends JFrame {
 		                        	function = function + "Core promoter element in prokaryotes, similar to the TATA box in eukaryotes. ";
 		                        	
 		                        	// Function: Core promoter element in prokaryotes, similar to the TATA box in eukaryotes.
-		                        	if (result > 40)
+		                        	
+		                        	if(result == 0)
+		                        	{
+		                        		function = function + "<br> but there is no " + motif +" motif found. <span></html>";
+		                        	}
+		                        	else if (result > 40)
 		                        	{
 		                        		function = function + result + "% Suggests that a large proportion of genes are regulated in a TATA-dependent manner. " 
 		                        				+"Genes with tightly regulated, highly controlled expression (e.g., stress response, development).<span></html>"; 
@@ -417,6 +422,7 @@ public class Home extends JFrame {
 		                        		function = function + result + "% Suggests that a large proportion of genes are regulated in a TATA-dependent manner. "
 		                        				+ "Genes that are constitutively expressed and use alternative promoter elements (e.g., housekeeping genes).<span></html>";  
 		                        	}
+		                        	
 		       
 		                        }
 		                        else if(motif.equals("GC")) 
@@ -424,7 +430,11 @@ public class Home extends JFrame {
 		                        	function = function + " the GC box is commonly found in constitutively expressed genes. "
 		                        			+ "The GC box serves as a binding site for transcription factors like Sp1, which play a role in activating gene expression under normal and stress conditions. ";
 		                        	
-		                        	if (result > 40)
+		                        	if(result == 0)
+		                        	{
+		                        		function = function + "<br> but there is no " + motif +" motif found. <span></html>";
+		                        	}
+		                        	else if (result > 40)
 		                        	{
 		                        		function = function + result + "% Indicates strong constitutive expression of genes. Suggests widespread regulatory control by transcription factors like Sp1. <span></html>"; 
 		                        	}
@@ -439,7 +449,11 @@ public class Home extends JFrame {
 		                        {
 		                            function = function + "Essential for transcription initiation in many eukaryotic genes. Works as an enhancer element for transcription factor binding. ";
 
-		                            if (result > 40) {
+		                            if(result == 0)
+		                        	{
+		                        		function = function + "<br> but there is no " + motif +" motif found. <span></html>";
+		                        	}
+		                            else if (result > 40) {
 		                                function = function + result + "% indicates that a large number of genes depend on CAAT box for transcription initiation. "
 		                                        + "Common in genes requiring precise transcriptional regulation.<span></html>";
 		                            } else {
@@ -450,7 +464,12 @@ public class Home extends JFrame {
 		                        {
 		                            function = function + "Binding site for CREB (cAMP Response Element-Binding Protein), involved in signal-dependent gene regulation. ";
 
-		                            if (result > 40) {
+		                            
+		                            if(result == 0)
+		                        	{
+		                        		function = function + "<br> but there is no " + motif +" motif found. <span></html>";
+		                        	}
+		                            else if (result > 40) {
 		                                function = function + result + "% suggests a strong regulatory response to cAMP signaling pathways. "
 		                                        + "Common in genes related to metabolism, memory formation, and hormonal regulation.<span></html>";
 		                            } else {
@@ -462,7 +481,12 @@ public class Home extends JFrame {
 		                        {
 		                            function = function + "Target site for AP-1 transcription factors, involved in cell growth, differentiation, and stress response. ";
 
-		                            if (result > 40) {
+		                            
+		                            if(result == 0)
+		                        	{
+		                        		function = function + "<br> but there is no " + motif +" motif found. <span></html>";
+		                        	}
+		                            else if (result > 40) {
 		                                function = function + result + "% indicates strong AP-1 mediated transcriptional activation. "
 		                                        + "Common in genes responding to cellular stress and mitogenic signals.<span></html>";
 		                            } else {
@@ -473,7 +497,11 @@ public class Home extends JFrame {
 		                        {
 		                            function = function + "Binding site for NF-κB, a key regulator of immune and inflammatory responses. ";
 
-		                            if (result > 40) {
+		                            if(result == 0)
+		                        	{
+		                        		function = function + "<br> but there is no " + motif +" motif found. <span></html>";
+		                        	}
+		                            else if (result > 40) {
 		                                function = function + result + "% suggests a high proportion of genes regulated by NF-κB, likely involved in immune response and inflammation.<span></html>";
 		                            } else {
 		                                function = function + result + "% indicates a lower presence of NF-κB binding sites, suggesting alternative immune regulatory pathways.<span></html>";
@@ -483,7 +511,12 @@ public class Home extends JFrame {
 		                        {
 		                            function = function + "Prokaryotic promoter element, essential for RNA polymerase binding and transcription initiation. ";
 
-		                            if (result > 40) {
+		                            
+		                            if(result == 0)
+		                        	{
+		                        		function = function + "<br> but there is no " + motif +" motif found. <span></html>";
+		                        	}
+		                            else if (result > 40) {
 		                                function = function + result + "% suggests strong transcriptional activity in prokaryotes. "
 		                                        + "Indicates genes with high expression levels under normal conditions.<span></html>";
 		                            } else {
@@ -494,7 +527,11 @@ public class Home extends JFrame {
 		                        {
 		                            function = function + "Ribosome binding site in prokaryotic mRNA, crucial for translation initiation. ";
 
-		                            if (result > 40) {
+		                            if(result == 0)
+		                        	{
+		                        		function = function + "<br> but there is no " + motif +" motif found. <span></html>";
+		                        	}
+		                            else if (result > 40) {
 		                                function = function + result + "% suggests highly efficient translation initiation in prokaryotic genes.<span></html>";
 		                            } else {
 		                                function = function + result + "% suggests lower Shine-Dalgarno occurrence, indicating less efficient ribosome binding and translation initiation.<span></html>";
@@ -504,7 +541,11 @@ public class Home extends JFrame {
 		                        {
 		                            function = function + "Regulatory DNA sequence found in homeobox genes, essential for body patterning and development. ";
 
-		                            if (result > 40) {
+		                            if(result == 0)
+		                        	{
+		                        		function = function + "<br> but there is no " + motif +" motif found. <span></html>";
+		                        	}
+		                            else if (result > 40) {
 		                                function = function + result + "% suggests strong homeobox gene expression, critical for embryonic development and cellular differentiation.<span></html>";
 		                            } else {
 		                                function = function + result + "% suggests lower occurrence, indicating alternative mechanisms regulate developmental genes.<span></html>";
@@ -734,7 +775,7 @@ public class Home extends JFrame {
 
 		motifDisplayLabel = new JLabel("----");
 		motifDisplayLabel.setHorizontalAlignment(SwingConstants.CENTER);
-		motifDisplayLabel.setFont(new Font("Tahoma", Font.BOLD, 20));
+		motifDisplayLabel.setFont(new Font("Tahoma", Font.BOLD, 18));
 		motifDisplayLabel.setBounds(0, 11, 131, 49);
 		panel0.add(motifDisplayLabel);
 
@@ -772,7 +813,7 @@ public class Home extends JFrame {
 		
 		detailsLabel = new JLabel("------------");
 		detailsLabel.setVerticalAlignment(SwingConstants.TOP);
-		detailsLabel.setBounds(181, 13, 66, 28);
+		detailsLabel.setBounds(181, 13, 390, 28);
 		detailsLabel.setFont(new Font("Tahoma", Font.PLAIN, 15));
 		detailsLabel.setForeground(Color.GREEN);
 		sigPanel.add(detailsLabel);
