@@ -1,4 +1,4 @@
-# DNA-Analyzer
+# DNA Analyzer Tool🧬
 Specific DNA Motif Finder, GC content and Nucleotide Frequency Counter and Predict significance based on percentages
 
 ```
