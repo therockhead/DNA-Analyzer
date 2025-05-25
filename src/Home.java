@@ -238,7 +238,7 @@ public class Home extends JFrame {
 		setBackground(Color.BLACK);
 		setTitle("DNA Analyzer Tool");
 		setForeground(Color.BLACK);
-		setIconImage(Toolkit.getDefaultToolkit().getImage("C:\\Users\\Asif\\eclipse-workspace\\DNA-Analyzer-Tool\\images\\icon.png"));
+		setIconImage(Toolkit.getDefaultToolkit().getImage(".//images//icon.png"));
 		
 
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -269,7 +269,7 @@ public class Home extends JFrame {
 
 		JButton browseButton = new JButton("");
 		browseButton.setBackground(Color.BLACK);
-		browseButton.setIcon(new ImageIcon(".\\images\\browse.png"));
+		browseButton.setIcon(new ImageIcon(".//images//browse.png"));
 		browseButton.setFont(new Font("Tahoma", Font.BOLD, 14));
 		browseButton.setBorderPainted(false);  
 		browseButton.setFocusPainted(false);   
@@ -597,7 +597,7 @@ public class Home extends JFrame {
 		    }
 		});
 
-		findButton.setIcon(new ImageIcon(".\\images\\find.png"));
+		findButton.setIcon(new ImageIcon(".//images//find.png"));
 		findButton.setFont(new Font("Tahoma", Font.BOLD, 14));
 		findButton.setBounds(496, 164, 42, 32);
 		contentPane.add(findButton);
@@ -630,8 +630,8 @@ public class Home extends JFrame {
 				
 			}
 		});
-		clearButton.setSelectedIcon(new ImageIcon(".\\images\\clean.png"));
-		clearButton.setIcon(new ImageIcon(".\\images\\clean (1).png"));
+		clearButton.setSelectedIcon(new ImageIcon(".//images//clean.png"));
+		clearButton.setIcon(new ImageIcon(".//images//clean (1).png"));
 		clearButton.setFont(new Font("Tahoma", Font.BOLD, 14));
 		clearButton.setBounds(548, 158, 42, 41);
 		contentPane.add(clearButton);
@@ -786,7 +786,7 @@ public class Home extends JFrame {
 		panel0.add(motifPanelLabel);
 		
 		JLabel gifLabel = new JLabel("");
-		gifLabel.setIcon(new ImageIcon(".\\images\\greenDNA.gif"));
+		gifLabel.setIcon(new ImageIcon(".//images//greenDNA.gif"));
 		gifLabel.setBounds(272, 30, 322, 88);
 		contentPane.add(gifLabel);
 		
@@ -849,7 +849,7 @@ public class Home extends JFrame {
 			}
 		});
 		removeFileButton.setForeground(Color.GREEN);
-		removeFileButton.setIcon(new ImageIcon(".\\images\\delete.png"));
+		removeFileButton.setIcon(new ImageIcon(".//images//delete.png"));
 		removeFileButton.setFont(new Font("Tahoma", Font.PLAIN, 12));
 		removeFileButton.setBackground(Color.BLACK);
 		removeFileButton.setBounds(239, 120, 35, 34);
