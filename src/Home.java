@@ -236,7 +236,7 @@ public class Home extends JFrame {
 		setResizable(false);
 		
 		setBackground(Color.BLACK);
-		setTitle("DNA Analyzer Tool");
+		setTitle("GENA: A DNA Analyzer");
 		setForeground(Color.BLACK);
 		setIconImage(Toolkit.getDefaultToolkit().getImage(".//images//icon.png"));
 		
@@ -260,11 +260,11 @@ public class Home extends JFrame {
 		chooseFileLabel.setBounds(10, 132, 197, 16);
 		contentPane.add(chooseFileLabel);
 
-		JLabel topLabel = new JLabel("DNA Analyzer");
+		JLabel topLabel = new JLabel("GENA");
 		topLabel.setBackground(Color.BLACK);
 		topLabel.setForeground(new Color(255, 255, 255));
 		topLabel.setBounds(72, 58, 299, 24);
-		topLabel.setFont(new Font("Copperplate Gothic Bold", Font.BOLD, 35));
+		topLabel.setFont(new Font("Copperplate Gothic Bold", Font.BOLD, 30));
 		contentPane.add(topLabel);
 
 		JButton browseButton = new JButton("");
