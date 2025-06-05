@@ -76,9 +76,9 @@ public class Home extends JFrame {
 		int count = 0;
 		int index = 0;
 
-		while ((index = dna.indexOf(motif, index)) != -1) { // Find motif occurrence
+		while ((index = dna.indexOf(motif, index)) != -1) {
 			count++;
-			index += 1; 
+			index += motif.length(); // Advance by motif length instead of 1
 		}
 
 		return count;
